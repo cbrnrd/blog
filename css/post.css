@@ -1,0 +1,125 @@
+body {
+  font-family: "Fenix", serif;
+  color: #ecf0f1;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  max-width: 650px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.post-title {
+  color: #ecf0f1;
+  font-family: "Fenix", serif;
+}
+
+.post-date {
+  margin-bottom: 50px;
+  color: #bdc3c7;
+  font-family: "Inconsolata", monospace;
+}
+
+.post-content h1, .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+  margin-top: 50px;
+  color: #ecf0f1;
+  font-family: "Fenix", serif;
+}
+
+.post-content p, .post-content li, .post-content ol, .post-content ul {
+  color: #ecf0f1;
+  font-family: "Fenix", serif;
+  font-size: 20px;
+}
+
+.post-content li {
+  margin-bottom: 8px;
+}
+
+.post-content a {
+  color: #ecf0f1;
+  text-decoration: none;
+  border-bottom: 2px solid #ecf0f1;
+  transition: color .2s ease, border .2s ease;
+}
+
+.post-content img {
+  width: 100%;
+}
+
+.post-content span.caption {
+  display: block;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #bdc3c7;
+  font-family: "Inconsolata", monospace;
+  font-size: 15px;
+}
+
+.post-content code {
+  color: #232323;
+  font-family: "Inconsolata", monospace;
+}
+
+.post-content pre code {
+  position: relative;
+  background-color: #E6E6E6;
+  border-color: #D5D5D5;
+}
+
+.post-content pre code::after {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  content: attr(lang);
+  color: #D5D5D5;
+  font-size: 1rem;
+}
+
+/* Syntax Theme */
+.string {
+  color: #22c3a8;
+}
+
+.special {
+  color: #a822c3;
+}
+
+.global {
+  color: #d99426;
+}
+
+.method {
+  color: #22a8c3;
+}
+
+.comment {
+  color: #a6a6a6;
+}
+
+#back {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+}
+
+#back svg {
+  height: 15px;
+}
+
+#back svg #back-arrow {
+  transition: fill .2s ease;
+}
+
+#back:hover svg #back-arrow {
+  fill: #2590ff;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 50px;
+  }
+}
